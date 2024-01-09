@@ -40,12 +40,12 @@ const UpdateCliente = () => {
   return (
     
     <div>
-      <h1>Atualizar Categoria</h1>
+      <h1>Atualizar Cliente</h1>
       <table style={{marginLeft:'20px'}}>
         <tbody>
           <tr>
             <td>
-              <label>ID da Categoria:</label>
+              <label>ID da Cliente:</label>
             </td>
             <td>
               <input type="text" name="IdCliente" value={cliente.idCliente = codigo} onChange={handleInputChange}/>
@@ -70,7 +70,7 @@ const UpdateCliente = () => {
           </tr>
           <tr>
             <td colSpan="2">
-              <button onClick={handleUpdateCliente}>Atualizar Categoria</button>
+              <button onClick={handleUpdateCliente}>Atualizar Cliente</button>
             </td>
           </tr>
         </tbody>

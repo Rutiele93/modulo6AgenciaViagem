@@ -53,7 +53,7 @@ const AddDestino = () => {
                 <label className="sr-only text-center">URL imagem:</label>
               </td>
               <td>
-                <input type="text" name="ImagemUrl" value={newDestino.ImagemUrl} onChange={handleInputChange} className="form-control form-control-lg" />
+                <input type="text" name="ImagemUrl" value={newDestino.ImagemUrl} onChange={handleInputChange} className="form-control form-control-lg"/>
               </td>
             </tr>
             <tr>
@@ -61,7 +61,7 @@ const AddDestino = () => {
                 <label className="sr-only text-center">Categoria Destino:</label>
               </td>
               <td>
-                <input type="text" name="CategoriaDestino" value={newDestino.CategoriaDestino} onChange={handleInputChange} className="form-control form-control-lg" />
+                <input type="text" name="CategoriaDestino" value={newDestino.CategoriaDestino} onChange={handleInputChange} className="form-control form-control-lg"/>
               </td>
             </tr>
             <tr>
@@ -69,7 +69,7 @@ const AddDestino = () => {
                 <label className="sr-only text-center">Condicao:</label>
               </td>
               <td>
-                <input type="text" name="Condicao" value={newDestino.Condicao} onChange={handleInputChange} className="form-control form-control-lg" />
+                <input type="text" name="Condicao" value={newDestino.Condicao} onChange={handleInputChange} className="form-control form-control-lg"/>
               </td>
             </tr>
             <tr>

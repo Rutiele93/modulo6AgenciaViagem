@@ -28,7 +28,7 @@ export default function Home() {
             <div className="carousel-inner">
               {/* Primeiro slide */}
               <div className="carousel-item carousel-item-start active">
-                <img src="/img/flor-3.jpg" alt="Promoções imperdíveis!" width="100%" height="100%" />
+                <img src="/img/flor-1.jpg" alt="Promoções imperdíveis!" width="100%" height="100%" />
                 <div className="container">
                   <div className="carousel-caption text-white text-start">
                     <h1>Promoções imperdíveis!</h1>

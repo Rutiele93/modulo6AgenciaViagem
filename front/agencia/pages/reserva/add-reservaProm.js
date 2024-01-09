@@ -13,7 +13,7 @@ const AddReserva = () => {
 
   const handleAddReserva = () => {
     axios.post("https://localhost:7023/api/Reservas", newReserva)
-    
+
       .then(() => {
         router.push("/reserva");
       })
@@ -33,67 +33,69 @@ const AddReserva = () => {
         console.log("Erro completo:", error.config);
       });
   };
-  return (  
-    <div style={{ margin: "0 auto" }}>
-      <h1 className={style.h1}>Inserir Reserva</h1>
-      <table style={{ marginLeft: "20px" }}>
-        <tbody>
-          <tr>
-            <td>
-              <label>Id Promoção:</label>
-            </td>
-            <td>
-              <input
-                type="text" name="IdPromocao" value={newReserva.IdPromocao} onChange={handleInputChange} />
-            </td>
-          </tr>    
-          <tr>
-            <td>
-              <label>Pagamento:</label>
-            </td>
-            <td>
-              <input type="text" name="Pagamento" value={newReserva.Pagamento} onChange={handleInputChange} />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label>Status Pedido:</label>
-            </td>
-            <td>
-              <input type="text" name="StatusPedido" value={newReserva.StatusPedido} onChange={handleInputChange}/>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label>Id Cliente:</label>
-            </td>
-            <td>
-              <input type="text" name="IdCliente" value={newReserva.IdCliente} onChange={handleInputChange} />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label>Preco Total:</label>
-            </td>
-            <td>
-              <input type="text" name="PrecoTotal" value={newReserva.PrecoTotal} onChange={handleInputChange} />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label>Qtd. Reservada:</label>
-            </td>
-            <td>
-              <input type="text" name="QtdReservada" value={newReserva.QtdReservada} onChange={handleInputChange} />
-            </td>
-          </tr>
-          <tr>
-            <td colSpan="2">
-              <button onClick={handleAddReserva}>Inserir Reserva</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+  return (
+    <div className="container d-flex align-items-center justify-content-center" style={{ height: " 100vh" }}>
+      <div className="center-div">
+        <h1 className={style.h1}>Inserir Reserva</h1>
+        <table style={{ marginLeft: "20px" }}>
+          <tbody>
+            <tr>
+              <td>
+                <label>Id Promoção:</label>
+              </td>
+              <td>
+                <input
+                  type="text" name="IdPromocao" value={newReserva.IdPromocao} onChange={handleInputChange} className="form-control form-control-lg" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Pagamento:</label>
+              </td>
+              <td>
+                <input type="text" name="Pagamento" value={newReserva.Pagamento} onChange={handleInputChange} className="form-control form-control-lg" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Status Pedido:</label>
+              </td>
+              <td>
+                <input type="text" name="StatusPedido" value={newReserva.StatusPedido} onChange={handleInputChange} className="form-control form-control-lg" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Id Cliente:</label>
+              </td>
+              <td>
+                <input type="text" name="IdCliente" value={newReserva.IdCliente} onChange={handleInputChange} className="form-control form-control-lg" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Preco Total: </label>
+              </td>
+              <td>
+                <input type="text" name="PrecoTotal" value={newReserva.PrecoTotal} onChange={handleInputChange} className="form-control form-control-lg" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Qtd. Reservada: </label>
+              </td>
+              <td>
+                <input type="text" name="QtdReservada" value={newReserva.QtdReservada} onChange={handleInputChange} className="form-control form-control-lg" />
+              </td>
+            </tr>
+            <tr>
+              <td colSpan="2">
+                <button className="w-100 btn btn-lg btn-dark" onClick={handleAddReserva}>Inserir Reserva</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

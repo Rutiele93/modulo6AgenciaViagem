@@ -45,16 +45,14 @@ const Home = () => {
           <tbody key={element.idReserva}>
             <tr className={style.tabela}>
               <td>{element.idReserva}</td>
-              <td>{element.destinos?.NomeDestino ?? 'N/A'}</td>
-              <td>{element.promocaos?.NomeDestinoProm ?? 'N/A'}</td>
+              <td>{element.idDestino ?? 'N/A'}</td>
+              <td>{element.idPromocao ?? 'N/A'}</td>
               <td>{element.pagamento}</td>
               <td>{element.statusPedido}</td>
               <td>{element.precoTotal}</td>
               <td>{element.qtdReservada}</td>
-              <td>{element.clientes?.NomeCliente ?? 'N/A'}</td>
-                   
+              <td>{element.idCliente ?? 'N/A'}</td>                   
               <td>
-                <Link href={`reserva/update-reserva/${element.idReserva}`} className="btn btn-warning">  Editar </Link>
                 <Link href={`reserva/delete-reserva/${element.idReserva}`} className="btn btn btn-danger"> Excluir </Link>
               </td>
             </tr>
