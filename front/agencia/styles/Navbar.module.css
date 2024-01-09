@@ -1,0 +1,38 @@
+
+.navbar {
+    background-image: var(--gradient);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    --bs-nav-link-color: var(--cor-texto);
+    --bs-nav-link-hover-color: var(--cor-especial);
+    font-size: 25px;   
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 20px;
+    padding: 5px 50px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+  
+.navbar a:hover {
+    background-image: var(--gradient1);
+}
+.nav-menu{
+    background-image: var(--gradient);
+    box-shadow: 0 0.5rem 1rem rgba(99, 204, 236, 0.5), inset 0 -1px 0 rgba(78, 163, 219, 0.15);
+    background-color: transparent;
+    font-size: 23px;    
+}
+
+#navbarLogo { /* logo da navbar */
+    width:130px; 
+}
+
+#togglerLogo { /* logo botÃ£o mobile */
+    max-width: 2rem;
+}
